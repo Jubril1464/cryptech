@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section {
+    background-image: url(../assets/home-hero-v2.png);
+    min-height: 110vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .universe {
+    background-image: url(../assets/illu.svg);
+    min-height: 120vh;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gateway {
+    background-color: rgba(0,97,86);
+    background-image:url(../assets/bottom-rocket.svg);
+    background-position:left bottom;
+    background-repeat: no-repeat;
+    background-size: auto 40%,auto 60%;
+
+  }
+  .gateway-pic{
+    background-image: url(../assets/feature-2-home.webp);
+    background-position: top;
+    background-size: cover;
+  }
+  .overview {
+    background-image: url(../assets/bg-green.svg),  url(../assets/dollar.svg);
+    background-position: 0 100%,calc(100% + 45px) 100px;
+    background-size: auto,150px;
+    background-repeat: no-repeat;
+  }
+  .trust {
+    background-image: url(../assets/bg-green-left.svg),  url(../assets/bg-greem-right.svg);
+    background-position: 0 100%,100% 100%;
+    background-size: contain;
+    background-color: rgba(222,245,242);
+
+  }
+  .black-bg {
+    background-image: url(../assets/bg-black.svg);
+    background-position: 50%;
+  }
+  .yello-bg {
+  background-image: url(../assets/yellow-bg.svg);
+  background-position: 100% 0;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  }
+  .footer {
+    background-image: url(../assets/footer-bg.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(0,97,86);
+  }
+  .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+ 
