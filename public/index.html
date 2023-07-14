@@ -11,22 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
-    <script defer src="../src/index.js"></script>
+    <script defer src="./index.js"></script>
   </head>
   <body class="">
     <div class="h-screen hero-section relative">
       <nav class="flex justify-between py-4 px-4 items-center nav w-full shadow-md">
         <div>
-          <img src="/assets/CRYPTECHX WHITE.png" data-src="/assets/CRYPTECHX BLACK.png" alt="" class="w-[10rem] logo">
+          <img src="./assets/CRYPTECHX WHITE.png" data-src="./assets/CRYPTECHX BLACK.png" alt="" class="w-[10rem] logo">
         </div>
         <ul
-          class="text-white font-medium text-sm flex gap-6 font-roboto hidden md:flex"
+          class="text-white font-medium text-sm flex gap-6 font-roboto hidden md:flex nav-items" 
         >
-          <li>About Us</li>
-          <li>Products</li>
-          <li>Learn</li>
-          <li>Resources</li>
-          <li>Careers</li>
+         <a href="#"><li>About Us</li></a> 
+         <a href="#"><li>Products</li></a> 
+         <a href="#"><li>Learn</li></a> 
+         <a href="#"><li>Resources</li></a> 
+         <a href="#"><li>Careers</li></a>
         </ul>
         <div class="flex gap-3 hidden md:flex">
           <a
@@ -41,16 +41,19 @@
           >
         </div>
 
-        <div class="navbar-toggle right-4 absolute top-3 md:hidden" id="navbarToggle">
-          <span class="block w-8 h-1 bg-white bar-1"></span>
-          <span class="block w-8 h-1 bg-white mt-1 bar-2"></span>
-          <span class="block w-8 h-1 bg-white mt-1 bar-3"></span>
-        </div>
+        <button class="navbar-toggle  absolute right-5 top-5 md:hidden " id="navbarToggle">
+          <span class="block w-8 h-[2px] bg-white bar-1"></span>
+          <span class="block w-8 h-[2px] bg-white mt-1 bar-2"></span>
+          <span class="block w-8 h-[2px] bg-white mt-1 bar-3"></span>
+        </button>
+        <!-- <button class="absolute right-5 top-3 md:hidden" id="btn-close">
+          <span class="text-5xl">&times;</span>
+        </button> -->
       </nav>
 
       
       <div
-        class="fixed py-2 px-2 bg-white w-full z-10 left-0 md:hidden opacity-0 nav-bar z-10"
+        class="fixed py-2 px-2 bg-white w-full z-10 left-0 md:hidden hide nav-bar z-10"
       >
         <span class="absolute top-0 right-2 text-3xl btn-close">&times;</span>
         <ul
@@ -312,7 +315,7 @@
       </div>
       <div class="absolute right-2 bottom-0 hidden md:inline-block">
         <img
-          src="../assets/wallets.png"
+          src="./assets/wallets.png"
           alt=""
           class="h-[300px] lg:h-[515px] lg:w-[400px] w-[200px]"
         />
@@ -321,33 +324,34 @@
 
     <div class="universe pt-32 px-10 lg:px-0 lg:pl-32">
       <h1 class="sm:text-5xl text-3xl text-green-900 font-bold">
-        Patricia Universe<span class="text-black">,</span>
+        CryptechX Universe<span class="text-black">,</span>
       </h1>
       <h1 class="sm:text-5xl text-3xl text-black font-bold mt-2">
         Crypto is Oxygen To Us
       </h1>
       <div class="sm:w-[25rem] w-[15rem] mt-10">
         <p class="text-slate-400">
-          We like to think of ourselves as superheroes here at Patricia. We
+          We like to think of ourselves as superheroes here at CryptechX. We
           aren’t in the business of doing things just because they are routine.
           We are in the business of creating solutions that are simply
           mind-blowing.
         </p>
       </div>
       <div
-        class="md:w-[40rem] sm:w-[30rem] w-[15rem] rounded-[50px] my-10 bg-white pb-10 shadow-lg"
+        class="md:w-[40rem] sm:w-[30rem] w-[15rem] sm:rounded-[50px] rounded-2xl my-10 bg-white pb-10 shadow-lg"
       >
         <img
-          src="../assets/patricia.webp"
+          src="./assets/cryptechx2.webp"
           alt=""
           width="100%"
-          class="rounded-[50px]"
+
+          class="sm:rounded-[50px] rounded-t-2xl h-[20rem]"
         />
         <div class="flex justify-center mt-8 items-center gap-5">
           <h2
             class="text-green-900 md:text-3xl sm:text-2xl text-[12px] font-medium"
           >
-            Meet the Humans of Patricia
+            Meet the Humans of CryptechX
           </h2>
           <a href="#" class="duration-500 hover:translate-x-1 cursor-pointer">
             <span
@@ -373,7 +377,7 @@
         <div class="sm:w-[25rem] w-full mt-10">
           <p class="text-slate-400">
             Ever imagined crypto being fun as well as functional? Well, we too
-            have, and we have created Patricia to do just that. Come on board
+            have, and we have created CryptechX to do just that. Come on board
             and experience crypto the redefined way.
           </p>
         </div>
@@ -385,11 +389,11 @@
           >
         </div>
         <div class="mt-2">
-          <img src="../assets/visa.svg" alt="" class="" />
+          <img src="./assets/visa.svg" alt="" class="" />
         </div>
       </div>
       <div class="sm:h-[35rem] sm:w-[35rem] h-[20rem] w-[20rem]">
-        <img src="../assets/world.png" alt="" height="100%" width="100%" />
+        <img src="./assets/world.png" alt="" height="100%" width="100%" />
       </div>
     </div>
     <div>
@@ -411,37 +415,37 @@
       class="h-[100vh] overview grid lg:grid-cols-4 grid-cols-1 pt-16 gap-10 px-10"
     >
       <div class="hidden lg:block">
-        <img src="../assets/crypto-trading-device-min.png" alt="" />
+        <img src="./assets/crypto-trading-device-min.png" alt="" />
       </div>
       <div class="space-y-3 col-span-3">
         <h1 class="sm:text-5xl text-3xl text-green-900 font-bold">Crypto</h1>
         <h1 class="sm:text-5xl text-3xl font-bold">Trading, Simplified</h1>
         <p class="text-slate-400 inline-block mt-2">
-          Think lifting a feather is effortless? Try trading with Patricia
+          Think lifting a feather is effortless? Try trading with CryptechX
         </p>
         <div
           class="grid md:grid-cols-2 grid-cols-1 md:w-[50rem] sm:w-[20rem] w-[18rem] gap-10 mt-12"
         >
           <div class="flex gap-5 px-5 bg-white shadow-md rounded-2xl py-5">
-            <img src="../assets/fly.svg" alt="" height="20px" width="20px" />
+            <img src="./assets/fly.svg" alt="" height="20px" width="20px" />
             <p class="font-roboto font-semibold text-[12px] sm:text[18px]">
               Real time wallet value
             </p>
           </div>
           <div class="flex gap-5 px-5 bg-white shadow-md rounded-2xl py-6">
-            <img src="../assets/fly.svg" alt="" height="20px" width="20px" />
+            <img src="./assets/fly.svg" alt="" height="20px" width="20px" />
             <p class="font-roboto font-semibold text-[12px] sm:text[18px]">
               Seamless Crypto transactions
             </p>
           </div>
           <div class="flex gap-5 px-5 bg-white shadow-md rounded-2xl py-5">
-            <img src="../assets/fly.svg" alt="" height="20px" width="20px" />
+            <img src="./assets/fly.svg" alt="" height="20px" width="20px" />
             <p class="font-roboto font-semibold text-[12px] sm:text[18px]">
               Real time Crypto values
             </p>
           </div>
           <div class="flex gap-5 px-5 bg-white shadow-md rounded-2xl py-5">
-            <img src="../assets/fly.svg" alt="" height="20px" width="20px" />
+            <img src="./assets/fly.svg" alt="" height="20px" width="20px" />
             <p class="font-roboto font-semibold text-[12px] sm:text[18px]">
               Crypto answers at your fingertips
             </p>
@@ -449,19 +453,21 @@
         </div>
       </div>
     </div>
-    <div
+
+
+    <!-- <div
       class="flex gap-5 py-10 px-5 sm:flex-nowrap flex-wrap sm:justify-start justify-center"
     >
       <div class="pt-20 md:px-20 px-5">
         <h1 class="sm:text-5xl text-3xl font-bold">Do More With Crypto</h1>
         <p class="mt-10">
-          With Patricia Refill, you can buy data, pay your cable bills, and buy
+          With CryptechX Refill, you can buy data, pay your cable bills, and buy
           airtime both locally and internationally, all with crypto.
         </p>
         <div class="w-[20rem] mt-5">
           <div class="flex gap-5 px-5 bg-white shadow-md rounded-2xl py-5">
             <img
-              src="../assets/fly-yellow.svg"
+              src="./assets/fly-yellow.svg"
               alt=""
               height="20px"
               width="20px"
@@ -472,7 +478,7 @@
           </div>
           <div class="flex gap-5 px-5 bg-white shadow-md rounded-2xl py-5 mt-5">
             <img
-              src="../assets/fly-yellow.svg"
+              src="./assets/fly-yellow.svg"
               alt=""
               height="20px"
               width="20px"
@@ -483,7 +489,7 @@
           </div>
           <div class="flex gap-5 px-5 bg-white shadow-md rounded-2xl py-5 mt-5">
             <img
-              src="../assets/fly-yellow.svg"
+              src="./assets/fly-yellow.svg"
               alt=""
               height="20px"
               width="20px"
@@ -495,18 +501,20 @@
         </div>
       </div>
       <div>
-        <img src="../assets/refill.png" alt="" class="sm:w-[20rem] w-[10rem]" />
+        <img src="./assets/refill.png" alt="" class="sm:w-[20rem] w-[10rem]" />
       </div>
       <div>
-        <img src="../assets/refill.png" alt="" class="sm:w-[20rem] w-[10rem]" />
+        <img src="./assets/refill.png" alt="" class="sm:w-[20rem] w-[10rem]" />
       </div>
-    </div>
+    </div> -->
+
+
     <div class="trust flex py-[7rem] md:flex-row flex-col gap-5 md:gap-0">
       <div
         class="flex flex-col gap-10 md:border-r-2 md:border-slate-300 items-center px-10"
       >
-        <img src="../assets/secure.png" alt="" height="50px" width="50px" />
-        <h3 class="text-3xl text-center">Patricia is secure and trustworthy</h3>
+        <img src="./assets/secure.png" alt="" height="50px" width="50px" />
+        <h3 class="text-3xl text-center">CryptechX is secure and trustworthy</h3>
         <p class="text-slate-500 text-center">
           Trusted by millions globally for its secure platform, we are confident
           to say that your crypto is in the right hands.
@@ -516,12 +524,12 @@
         class="flex flex-col gap-5 md:border-r-2 md:border-slate-300 items-center px-10"
       >
         <img
-          src="../assets/easy_to_use.png"
+          src="./assets/easy_to_use.png"
           alt=""
           height="50px"
           width="50px"
         />
-        <h3 class="text-3xl text-center">Patricia is easy-to-use</h3>
+        <h3 class="text-3xl text-center">CryptechX is easy-to-use</h3>
         <p class="text-slate-500 text-center">
           Everyone loves an easy-to-use platform, that is why our top priority
           is providing you with seamless services you can enjoy without breaking
@@ -530,12 +538,12 @@
       </div>
       <div class="flex flex-col gap-5 items-center px-10">
         <img
-          src="../assets/built_for_you.png"
+          src="./assets/built_for_you.png"
           alt=""
           height="50px"
           width="50px"
         />
-        <h3 class="text-3xl text-center">Patricia is built for you</h3>
+        <h3 class="text-3xl text-center">CryptechX is built for you</h3>
         <p class="text-slate-500 text-center">
           Every one of our services is built with you in mind. Beating our chest
           we can say, we give you the best crypto experience.
@@ -557,7 +565,7 @@
           limitless
         </h1>
         <h4 class="text-lg leading-tight text-white">
-          Enjoy bordeless payments with Patricia Business. Our solution is
+          Enjoy bordeless payments with CryptechX Business. Our solution is
           <span class="text-[rgba(255,206,0)]"> user friendly</span>,
           <span class="text-[rgba(255,206,0)]">fast</span> and
           <span class="text-[rgba(255,206,0)]">secure</span>.
@@ -577,7 +585,7 @@
         </div>
       </div>
       <div>
-        <img src="../assets/patricia-biz-hero.png" alt="" class="w-[50rem]" />
+        <img src="./assets/patricia-biz-hero.png" alt="" class="w-[50rem]" />
       </div>
     </div>
     <div class="pt-[10rem]">
@@ -590,7 +598,7 @@
         <div class="sm:w-[25rem] w-[18rem] h-[27rem] rounded-3xl shadow-lg">
           <div class="h-[10rem] w-full overflow-hidden rounded-t-3xl">
             <img
-              src="../assets/Bitcoin__the_ingredint_of_the_future.jpg"
+              src="./assets/Bitcoin__the_ingredint_of_the_future.jpg"
               alt=""
               width="100%"
               class="h-full w-full rounded-t-3xl duration-500 hover:scale-110"
@@ -620,7 +628,7 @@
         <div class="sm:w-[25rem] w-[18rem] rounded-3xl shadow-lg">
           <div class="h-[10rem] w-full overflow-hidden rounded-t-3xl">
             <img
-              src="../assets/patricia-refill.jpg"
+              src="./assets/patricia-refill.jpg"
               alt=""
               width="100%"
               class="h-full w-full rounded-t-3xl duration-500 hover:scale-110"
@@ -636,7 +644,7 @@
               <p class="text-slate-700 text-[10px] font-medium">2 mins</p>
             </div>
             <h4 class="text-green-900 text-lg font-semibold mt-2">
-              Patricia Refill - A Crypto Payment Solution for Everyday Payments
+              CryptechX Refill - A Crypto Payment Solution for Everyday Payments
             </h4>
             <p class="text-slate-600 mt-2 text-[12px] font-medium">
               In today’s fast-paced world, it’s easy to get overwhelmed with a
@@ -667,7 +675,7 @@
         </p>
         <div class="h-[25rem]">
           <img
-            src="../assets/Customer_service.webp"
+            src="./assets/cryptechx5.webp"
             alt=""
             class="w-full h-full"
           />
@@ -680,7 +688,7 @@
           muted
           class="w-full object-cover h-full rounded-2xl"
         >
-          <source src="../assets/support-intro.mp4" type="video/mp4" />
+          <source src="./assets/support-intro.mp4" type="video/mp4" />
           {/* Add additional source elements for different video formats if
           needed */} Your browser does not support the video tag.
         </video>
@@ -689,11 +697,11 @@
     <div class="grid md:grid-cols-3 grid-cols-1 gap-10 sm:px-10 px-5 py-10">
       <div class="flex flex-col gap-10">
         <img
-          src="../assets/graduate.svg"
+          src="./assets/graduate.svg"
           alt=""
           class="sm:w-[10rem] sm:h-[10rem] w-[5rem] h-[4rem]"
         />
-        <h2 class="text-5xl font-bold">The Patricia Academy</h2>
+        <h2 class="text-5xl font-bold">The CryptechX Academy</h2>
         <p class="font-roboto font-normal">
           Teaching you everything you need to know about Crypto
         </p>
@@ -711,7 +719,7 @@
           class="sm:h-full sm:w-[60rem] w-[auto] overflow-hidden sm:rounded-l-[4rem] rounded-t-2xl"
         >
           <img
-            src="../assets/patricia_articles-breaking_barriers.jpg"
+            src="./assets/patricia_articles-breaking_barriers.jpg"
             alt=""
             width="100%"
             class="h-full w-full sm:rounded-l-[4rem] rounded-t-2xl duration-500 hover:scale-110"
@@ -745,7 +753,7 @@
             class="duration-500 hover:translate-x-1 cursor-pointer mt-5 block"
           >
             <img
-              src="../assets/arrow-right.svg"
+              src="./assets/arrow-right.svg"
               alt=""
               class="duration-500 hover:translate-x-1 cursor-pointer"
             />
@@ -755,7 +763,7 @@
     </div>
     <div class="grid md:grid-cols-2 grid-cols-1 gap-10 mt-10 md:px-10 px-5">
       <div class="w-full h-[40rem] hidden md:block">
-        <img src="../assets/Group_5597.png.webp" alt="" class="w-full h-full" />
+        <img src="./assets/Group_5597.png.webp" alt="" class="w-full h-full" />
       </div>
       <div class="space-y-5">
         <h1 class="text-5xl text-green-900 font-bold block">
@@ -765,24 +773,24 @@
 
         <p class="text-4xl text-green-900 block font-bold">``</p>
         <p class="text-slate-800">
-          It really feels good to have Patricia around, the best platform where
+          It really feels good to have CryptechX around, the best platform where
           you can trade your Cryptocurrencies. I am blessed to be among the one
           in a million to experience it.
         </p>
         <div class="flex gap-2 items-center">
           <img
-            src="../assets/feature-2-home.webp"
+            src="./assets/feature-2-home.webp"
             alt=""
             class="h-[30px] w-[30px] rounded-md"
           />
           <div class="flex flex-col gap-2">
             <p class="text-green-900">Tinoflash David</p>
             <div class="flex gap-1">
-              <img src="../assets/start.svg" alt="" />
-              <img src="../assets/start.svg" alt="" />
-              <img src="../assets/start.svg" alt="" />
-              <img src="../assets/start.svg" alt="" />
-              <img src="../assets/start.svg" alt="" />
+              <img src="./assets/start.svg" alt="" />
+              <img src="./assets/start.svg" alt="" />
+              <img src="./assets/start.svg" alt="" />
+              <img src="./assets/start.svg" alt="" />
+              <img src="./assets/start.svg" alt="" />
             </div>
           </div>
         </div>
@@ -796,13 +804,13 @@
         <div
           class="space-y-5 w-[20rem] h-[25rem] shadow-lg rounded-3xl px-5 py-5"
         >
-          <img src="../assets/INDEPENDENT.png" alt="" />
+          <img src="./assets/INDEPENDENT.png" alt="" />
           <h3 class="text-xl text-green-900 font-semibold">
             Why I endorse artistes to promote my business – Hanu...
           </h3>
           <p class="text-slate-800 text-[12px]">
             With the structures and strategies in place, you can say that Fejiro
-            Hanu Agbode’s Patricia is clearly heading for world domination, the
+            Hanu Agbode’s CryptechX is clearly heading for world domination, the
             team spirit and the zeal of their team is contagious. They have a
             clear vision and they’ll stop at nothing.
           </p>
@@ -810,13 +818,13 @@
         <div
           class="space-y-5 w-[20rem] h-[25rem] shadow-lg rounded-3xl px-5 py-5"
         >
-          <img src="../assets/technext.jfif" alt="" />
+          <img src="./assets/technext.jfif" alt="" />
           <h3 class="text-xl text-green-900 font-semibold">
-            CBN crypto ban aftermath: Patricia relocates...
+            CBN crypto ban aftermath: CryptechX relocates...
           </h3>
           <p class="text-slate-800 text-[12px]">
             The ban forced players within the space to device new models to
-            survive. For instance, Patricia announced a new platform, Glover
+            survive. For instance, CryptechX announced a new platform, Glover
             Exchange as the new entity responsible for the day-to-day operations
             for its Gift cards, Airtime2Cash, and refill services (Bill
             Payments)
@@ -825,9 +833,9 @@
         <div
           class="space-y-5 w-[20rem] h-[25rem] shadow-lg rounded-3xl px-5 py-5"
         >
-          <img src="../assets/AFRICAN-HEROES.png" alt="" />
+          <img src="./assets/AFRICAN-HEROES.png" alt="" />
           <h3 class="text-xl text-green-900 font-semibold">
-            Nigeria’s Patricia Relocates To Estonia. Here’s What It Means...
+           CryptechX Relocates To Estonia. Here’s What It Means...
           </h3>
           <p class="text-slate-800 text-[12px]">
             The major difference between a foreign branch and a local company
@@ -839,7 +847,7 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-10">
+    <div class="flex justify-center my-10">
       <div
         class="w-4/5 yello-bg sm:rounded-[4rem] rounded-3xl px-5 shadow-lg h-[30rem] mt-10 bg-[#fcf2db] flex justify-center flex-col items-center gap-10"
       >
@@ -875,9 +883,9 @@
     <div class="footer py-[7rem] px-10">
       <div class="lg:w-[50rem] w-full space-y-5">
         <p class="text-white">
-          Patricia is an alternative payment solutions company that facilitates
+          CryptechX is an alternative payment solutions company that facilitates
           the easy use of cryptocurrencies for everyday transactions. By
-          harnessing the intrinsic power of Blockchain technology, Patricia is
+          harnessing the intrinsic power of Blockchain technology, CryptechX is
           set to make Crypto easy for mankind, hereby creating a new and
           sustainable path for the present and future generations.
         </p>
@@ -905,10 +913,10 @@
           <li class="font-semibold text-xl">Product</li>
           <li>Refill</li>
           <li>Hank</li>
-          <li>Patricia Card (Coming Soon)</li>
-          <li>Patricia Business</li>
+          <li>CryptechX Card (Coming Soon)</li>
+          <li>CryptechX Business</li>
           <li>OTC</li>
-          <li>Patricia Merch</li>
+          <li>CryptechX Merch</li>
         </ul>
         <ul class="text-white space-y-5">
           <li class="font-semibold text-xl">Company</li>
@@ -939,23 +947,23 @@
       </div>
       <div class="mt-[7rem] py-[3rem] flex flex-wrap justify-between gap-10">
         <ul class="text-white space-y-5">
-          <li>© 2023 Patricia.</li>
+          <li>© 2023 CryptechX.</li>
           <li>All Rights Reserved</li>
         </ul>
         <ul class="text-white space-y-5">
           <li class="font-semibold text-xl">Contact</li>
 
           <a href="" class="text-[#22c55e] block"
-            ><li>hello@mypatricia.co</li></a
+            ><li>hello@mycryptechx.co</li></a
           >
           <a href="" class="text-[#22c55e] block"
-            ><li>support@mypatricia.co</li></a
+            ><li>support@mycryptechx.co</li></a
           >
           <div class="flex gap-2">
-            <img src="../assets/youtube.svg" alt="" />
-            <img src="../assets/twitter.svg" alt="" />
-            <img src="../assets/insta.svg" alt="" />
-            <img src="../assets/facebook.svg" alt="" />
+            <img src="./assets/youtube.svg" alt="" />
+            <img src="./assets/twitter.svg" alt="" />
+            <img src="./assets/insta.svg" alt="" />
+            <img src="./assets/facebook.svg" alt="" />
           </div>
         </ul>
         <ul class="text-white space-y-5">
@@ -972,10 +980,10 @@
           </li>
           <li>9845006DEFVC83D39B76</li>
           <li class="font-semibold text-xl">
-            Patricia Lithuania company number
+            CryptechX Lithuania company number
           </li>
           <li>305919619</li>
-          <li class="font-semibold text-xl">Patricia Canada MSB Code</li>
+          <li class="font-semibold text-xl">CryptechX Canada MSB Code</li>
           <li>BC1364279</li>
         </ul>
       </div>
